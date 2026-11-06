@@ -1,0 +1,29 @@
+title: "[Idee/Idea] "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **DE:** Schau bitte kurz, ob es die Idee schon gibt. Poste keine Hostnamen, IP-Adressen, Benutzernamen oder Schlüssel.
+        **EN:** Please check whether the idea already exists. Do not post host names, IP addresses, user names or keys.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / Problem
+      description: Welches Problem möchtest du lösen? / What problem are you trying to solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Vorschlag / Proposal
+      description: Wie stellst du dir die Lösung vor? / How do you imagine the solution?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativen / Alternatives
+      description: Welche Alternativen oder Workarounds hast du bedacht? / What alternatives or workarounds have you considered?
+    validations:
+      required: false

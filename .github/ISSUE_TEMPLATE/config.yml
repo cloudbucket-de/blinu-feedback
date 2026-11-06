@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Idee oder Feature-Wunsch / Idea or feature request
+    url: https://github.com/cloudbucket-de/blinu-feedback/discussions/new?category=ideas
+    about: Ideen und Feature-Wünsche bitte in den Discussions teilen. / Please share ideas and feature requests in Discussions.
+  - name: Support per E-Mail / Support by email
+    url: mailto:support@blinu.app
+    about: Fragen zu Lizenz, Konto oder persönliche Hilfe. / Questions about licensing, your account or personal help.
+  - name: Sicherheitslücke melden / Report a security vulnerability
+    url: https://github.com/cloudbucket-de/blinu-feedback/security/advisories/new
+    about: Bitte nicht öffentlich melden – nutze die vertrauliche Meldung. / Please do not report publicly – use private reporting.

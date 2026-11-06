@@ -1,0 +1,77 @@
+name: Bug melden / Report a bug
+description: Etwas funktioniert in Blinu nicht wie erwartet. / Something in Blinu does not work as expected.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für deinen Bericht! / Thanks for your report!
+
+        **DE:** Bitte schreibe Deutsch oder Englisch. Poste keine Hostnamen, IP-Adressen, Benutzernamen oder Schlüssel – ersetze sie durch Platzhalter wie `server.example.com`.
+        **EN:** German or English is fine. Do not post host names, IP addresses, user names or keys – replace them with placeholders such as `server.example.com`.
+  - type: input
+    id: app-version
+    attributes:
+      label: Blinu-Version / Blinu version
+      description: Zu finden unter „Blinu → Über Blinu“. / Find it under "Blinu → About Blinu".
+      placeholder: "1.6.0 (10)"
+    validations:
+      required: true
+  - type: dropdown
+    id: channel
+    attributes:
+      label: Kanal / Channel
+      options:
+        - stable
+        - beta
+    validations:
+      required: true
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS-Version / macOS version
+      placeholder: "26.1"
+    validations:
+      required: true
+  - type: dropdown
+    id: architecture
+    attributes:
+      label: Architektur / Architecture
+      options:
+        - arm64
+        - x86_64
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Was ist passiert? / What happened?
+      description: Beschreibe das Problem. / Describe the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Was hast du erwartet? / What did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Reproduzieren / Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: crash-report
+    attributes:
+      label: Absturzbericht (optional) / Crash report (optional)
+      description: |
+        DE: Nur einfügen, wenn du einverstanden bist. Entferne vorher Hostnamen, IP-Adressen, Benutzernamen und Schlüssel.
+        EN: Only paste if you consent. Remove host names, IP addresses, user names and keys first.
+      render: text
+    validations:
+      required: false
