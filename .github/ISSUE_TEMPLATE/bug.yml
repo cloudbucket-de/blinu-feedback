@@ -17,13 +17,12 @@ body:
       placeholder: "1.6.0 (10)"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: channel
     attributes:
       label: Kanal / Channel
-      options:
-        - stable
-        - beta
+      description: stable oder beta / stable or beta
+      placeholder: "stable"
     validations:
       required: true
   - type: input
@@ -33,13 +32,12 @@ body:
       placeholder: "26.1"
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: architecture
     attributes:
       label: Architektur / Architecture
-      options:
-        - arm64
-        - x86_64
+      description: arm64 (Apple Silicon) oder x86_64 (Intel) / arm64 (Apple Silicon) or x86_64 (Intel)
+      placeholder: "arm64"
     validations:
       required: true
   - type: textarea
